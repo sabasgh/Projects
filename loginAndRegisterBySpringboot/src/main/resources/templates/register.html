@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+</head>
+<body>
+<form method="post" th:action="@{/register}" th:object="${user}">
+    <input type="text" name="name" placeholder="نام" th:field="*{name}">
+    <hr>
+    <input type="text" name="family" placeholder="نام خانوادگي" th:field="*{family}">
+    <hr>
+    <input type="number" name="phone" placeholder="شماره موبايل" th:field="*{phone}">
+    <hr>
+    <input type="email" name="email" placeholder="ايميل" th:field="*{email}">
+    <hr>
+    <input type="password" name="password" placeholder="رمز" th:field="*{password}">
+    <hr>
+    <button type="submit">ثبت</button>
+</form>
+</body>
+</html>
