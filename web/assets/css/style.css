@@ -1,0 +1,184 @@
+
+h1 {
+    text-align: center;
+    color: hsl(0, 100%, 40%);
+    background-color: none;
+    font-style: italic;
+    font-size: 100px;
+}
+
+.slideshow_pictures img {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+}
+
+.main {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.menu_part {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.row {
+    border-bottom: 1px solid gray;
+
+}
+
+ul.menu li {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px;
+    font-size: 17px;
+}
+
+ul.menu li:hover {
+    color: orange;
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.row img {
+    -webkit-transform: scale(1.0); /*Webkit: Scale down image to 0.6x original size*/
+    -moz-transform: scale(0.6); /*Mozilla scale version*/
+    -o-transform: scale(0.6); /*Opera scale version*/
+    -webkit-transition-duration: 0.4s; /*Webkit: Animation duration*/
+    -moz-transition-duration: 0.4s; /*Mozilla duration version*/
+    -o-transition-duration: 0.4s; /*Opera duration version*/
+    margin: 20px 10px;
+}
+
+.row img:hover {
+    -webkit-transform: scale(1.2); /*Webkit: Scale up image to most of the original size*/
+    -moz-transform: scale(0.9); /*Mozilla scale version*/
+    -o-transform: scale(0.9); /*Opera scale version*/
+}
+
+p1 {
+
+    font-family: Georgia;
+    font-size: 30px;
+    font-style: italic;
+}
+
+olmenu {
+    list-style-type: circle;
+    margin: auto;
+    width: 100%;
+}
+
+h2 {
+    font-size: 50px;
+    font-style: inherit;
+}
+
+h3, h4, h5, h6 {
+    font-size: 30px;
+    margin-left50%;
+    color: darkgray;
+    margin: auto;
+    width: 100%;
+}
+
+.images {
+    width: 18%;
+    height: 17%;
+}
+
+.slideshow_container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.preview_button, .next_button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next_button {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.preview_button:hover, .next_button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.pictures_number_text {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px
+    }
+}
+
+
+.slideshow_pictures {
+    display: none;
+}
