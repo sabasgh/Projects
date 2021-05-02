@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+<!--we used http session in our method in userEdit so it creates session automaticalyy so we have the session but the attribute shows that this session is the one that we want-->
+<div th:if="${#httpSession != null && #httpSession.getAttribute('userEmail') != null}">
+    <a href="/edit">ويرايش</a>
+    <hr>
+    <form method="post" th:action="@{/logout}">
+        <input type="submit" th:value="خروج">
+    </form>
+</div>
+<div th:unless="${#httpSession != null && #httpSession.getAttribute('userEmail') != null}">
+    <a href="/login">ورود</a>
+    <br>
+    <a href="/register">ثبت نام</a>
+</div>
+</body>
+</html>

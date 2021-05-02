@@ -7,12 +7,14 @@
 <body>
 <form method="post" th:action="@{/register}" th:object="${user}">
     <input type="text" name="name" placeholder="نام" th:field="*{name}">
+    <p th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></p>
     <hr>
     <input type="text" name="family" placeholder="نام خانوادگي" th:field="*{family}">
     <hr>
     <input type="number" name="phone" placeholder="شماره موبايل" th:field="*{phone}">
     <hr>
     <input type="email" name="email" placeholder="ايميل" th:field="*{email}">
+   <p th:if="${emailStatus == 'duplicate'}">ايميل تكراري مي باشد!</p>
     <hr>
     <input type="password" name="password" placeholder="رمز" th:field="*{password}">
     <hr>

@@ -1,4 +1,4 @@
-package com.example.firstspringbootproject;
+package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @EnableJpaRepositories
-public class FirstspringbootprojectApplication {
+public class RegisteringBySpringbootApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FirstspringbootprojectApplication.class, args);
+        SpringApplication.run(RegisteringBySpringbootApplication.class, args);
     }
 
 }

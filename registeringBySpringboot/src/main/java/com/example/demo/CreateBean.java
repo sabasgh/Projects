@@ -1,6 +1,6 @@
-package com.example.firstspringbootproject;
+package com.example.demo;
 
-import com.example.firstspringbootproject.domain.User;
+import com.example.demo.domain.User;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

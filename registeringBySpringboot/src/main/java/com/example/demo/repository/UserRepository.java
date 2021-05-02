@@ -1,6 +1,7 @@
-package com.example.firstspringbootproject.repository;
+package com.example.demo.repository;
 
-import com.example.firstspringbootproject.domain.User;
+
+import com.example.demo.domain.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
